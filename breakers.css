@@ -1,0 +1,341 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --clr-white: hsl(0, 0%, 95%);
+  --clr-purple: hsl(287, 30%, 79%);
+  --clr-blue: hsl(192, 94%, 13%);
+  --clr-orange: hsl(11, 87%, 62%);
+  --clr-pink: hsl(6, 53%, 89%);
+}
+
+Html {
+  font-size: 1.8rem;
+  font-family: "Droid Serif", Serif;
+}
+body {
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  background-image: url(./images/gabriel-s-l1sqXJXBgd0-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+header h1 {
+  margin-top: 5rem;
+  align-self: center;
+  width: 60%;
+  font-size: 7rem;
+  font-family: "Roboto", "sans-serif";
+  color: var(--clr-white);
+  background-color: hsla(0, 0%, 0%, 0.5);
+  padding: 20px;
+  border-radius: 0.2rem;
+  font-weight: 100;
+  border: 1px white solid;
+  text-align: center;
+}
+
+nav {
+  margin-top: 3rem;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+}
+nav div {
+  font-size: 1.5rem;
+  background-color: hsla(0, 0%, 95%, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0.5rem;
+  margin-right: 2rem;
+  border-radius: 5px;
+}
+nav div:hover {
+  background-color: var(--clr-orange);
+}
+nav a {
+  color: black;
+  text-transform: uppercase;
+}
+
+/*UPCOMING*/
+
+.upcoming-trips {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+h2 {
+  width: 100%;
+  height: auto;
+  padding: 1.5rem 4rem 0.5rem;
+  background-color: var(--clr-pink);
+  font-family: "Roboto", "Sans-serif";
+  font-size: 2rem;
+  font-weight: 1000;
+  float: left;
+  border-top: solid 1px #013040;
+  border-bottom: solid 1px #013040;
+}
+.destinations {
+  height: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 3rem 0;
+  background-color: hsla(192, 94%, 13%, 0.5);
+  overflow-x: auto;
+}
+.destinations div {
+  margin: 0 3rem;
+  height: auto;
+  width: auto;
+  padding: 2rem;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  background-color: var(--clr-white);
+  border: 1px solid black;
+}
+
+.destinations a {
+  height: 22rem;
+  width: 20rem;
+  border-radius: 2rem;
+  border: 1px black dotted;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  background-size: cover;
+}
+
+.paris a {
+  background-image: url(./images/anthony-delanoix-Q0-fOL2nqZc-unsplash.jpg);
+  background-position: center bottom;
+}
+
+.dresden a {
+  background-image: url(./images/markus-spiske-PMBsP6CIIG4-unsplash.jpg);
+  background-position: 50% 75%;
+}
+
+.innsbruck a {
+  background-image: url(./images/bharat-patil-w9urZNaJYC4-unsplash.jpg);
+  background-position: center bottom;
+}
+.palermo a {
+  background-image: url(./images/cristina-gottardi-khX7PV12lno-unsplash.jpg);
+  background-position: 50% 30%;
+}
+
+.lisbon a {
+  background-image: url(./images/lisbon.jpg);
+  background-position: center bottom;
+}
+.tbilisi a {
+  background-image: url(./images/tbilisi.jpg);
+  background-position: 50% 35%;
+}
+.lanzarote a {
+  background-image: url(./images/lanzarote.jpg);
+}
+.question a {
+  background-image: url(./images/where.jpg);
+}
+
+.destinations div h3 {
+  font-size: 3rem;
+  font-family: "Roboto";
+  color: black;
+}
+.destinations div p {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+/* How */
+
+.how-it-works {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--clr-blue);
+}
+
+.how-it-works div {
+  margin: 4rem;
+  width: 50%;
+  height: 100%;
+  background-color: var(--clr-white);
+  display: flex;
+  justify-content: center;
+}
+ul {
+  margin: 2rem;
+  border-left: 1rem solid var(--clr-orange);
+}
+
+.how-it-works li {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+/* Testimonials */
+
+.testimonials {
+  width: 100%;
+  height: 35rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.quotes {
+  width: 100%;
+  height: 100%;
+  padding: 0 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--clr-orange);
+}
+.quotes div {
+  height: 75%;
+  width: 28%;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--clr-white);
+  border-radius: 1rem;
+}
+
+.testimonials h4 {
+  font-size: 1.8rem;
+}
+
+.testimonials p {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+}
+
+.testimonials h4:before {
+  color: black;
+  content: "\201C";
+  font-size: 4rem;
+  line-height: 0.1rem;
+  margin-right: 0.25em;
+  vertical-align: -0.4rem;
+}
+.testimonials h4:after {
+  color: black;
+  content: "\201D";
+  font-size: 4rem;
+  line-height: 0.1rem;
+  margin-left: 0.25em;
+  vertical-align: -0.6em;
+}
+/* Membership */
+
+.membership {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.member-form {
+  height: 35rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsla(192, 94%, 13%, 0.8);
+}
+.membership form {
+  height: 80%;
+  width: 60%;
+  background-color: hsla(0, 0%, 95%, 0.5);
+  font-size: 2rem;
+  padding: 3rem;
+  border: black solid 1px;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 20% 65% 15%;
+  grid-template-areas:
+    "name location"
+    "info info"
+    "submit . ";
+}
+
+form .name {
+  grid-area: name;
+}
+form .location {
+  grid-area: location;
+}
+form .info {
+  grid-area: info;
+}
+form .submit {
+  grid-area: submit;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  font-size: 1.5rem;
+}
+
+textarea {
+  font-size: 1.5rem;
+}
+.submit input {
+  background-color: var(--clr-pink);
+  margin-top: 1rem;
+  height: 3rem;
+}
+
+.submit input:hover {
+  cursor: pointer;
+  background-color: var(--clr-orange);
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  height: 6rem;
+  width: 100%;
+  background-color: var(--clr-pink);
+  padding-left: 4rem;
+}
+
+footer a {
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  color: var(--clr-blue);
+  text-decoration: none;
+  background-color: var(--clr-white);
+  margin: 0 2rem;
+  border: 1px black solid;
+}
