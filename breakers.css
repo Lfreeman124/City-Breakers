@@ -330,7 +330,7 @@ footer {
   padding-left: 4rem;
 }
 
-footer a {
+.text {
   font-size: 2rem;
   padding: 0.5rem 1rem;
   color: var(--clr-blue);
@@ -338,4 +338,9 @@ footer a {
   background-color: var(--clr-white);
   margin: 0 2rem;
   border: 1px black solid;
+}
+
+footer img {
+  height: 4rem;
+  margin: 0 2rem;
 }
