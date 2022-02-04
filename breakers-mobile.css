@@ -55,7 +55,7 @@ nav {
 /*UPCOMING*/
 
 .upcoming-trips {
-  height: 25rem;
+  height: 20rem;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -84,7 +84,7 @@ h2 {
   margin: 0 1.5rem;
   height: auto;
   width: auto;
-  padding: 2rem;
+  padding: 1rem;
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -95,9 +95,9 @@ h2 {
 .destinations a {
   height: 10rem;
   width: 10rem;
-  border-radius: 2rem;
+  border-radius: 1rem;
   border: 1px black dotted;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   overflow: hidden;
   background-size: cover;
 }
@@ -137,12 +137,12 @@ h2 {
 }
 
 .destinations div h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: "Roboto";
   color: black;
 }
 .destinations div p {
-  margin-top: 0.5rem;
+  margin-top: 0.2rem;
   font-size: 1rem;
 }
 
@@ -179,7 +179,7 @@ ul {
 
 .testimonials {
   width: 100%;
-  height: 50rem;
+  height: 60rem;
   display: flex;
   flex-direction: column;
 }
